@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhotoStudio</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="icons/fontawesome/css/all.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Dancing+Script|Trade+Winds&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="nav-menu">
+            <li><a class="nav-item" href="#">Home</a></li>
+            <li><a class="nav-item" href="#">Offers</a></li>
+            <li><a class="nav-item" href="#">Photographers</a></li>
+            <li><a class="nav-item" href="#">Models</a></li>
+            <li><a class="nav-item"  href="#" onclick="openSubmenu()">Photo</a>
+                <div class="sub-menu" id="ph">
+                    <a class="sub-menu-item">New</a>
+                    <a class="sub-menu-item">Old</a>
+                </div>
+
+
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="block"></div>
+<div class="form-block" id="form">
+    <form class="form" method="post" >
+        <p><label for="name">Name<span class="req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your name"></p>
+       <p><label for="email">E-mail<span class="req">*</span></label>
+           <input type="email" name="email" id="email" placeholder="Your email"></p>
+        <p><label for="tel">Phone Number</label>
+            <input type="tel" name="tel" id="tel" placeholder="Your number"></p>
+        <p><label for="message">Message<span class="req">*</span></label>
+            <textarea placeholder="" id="message"></textarea></p>
+        <input type="submit" value="Send">
+    </form>
+</div>
+
+    <div class="poslugu" id="poslugu">
+        <h1 class="title">Offers</h1>
+        <ul class="poslugu-list">
+            <li class="poslugu-list-item" >
+                <div class="text-ad">
+                <img class="posl-img" src="img/posl1.jpg" alt="" >
+                <p class="sub-title"><span>Photo in Studio</span></p>
+                </div>
+            </li>
+            <li class="poslugu-list-item" >
+                <div class="text-ad">
+                <img class="posl-img" src="img/posl2.jpg" alt="" >
+                    <p class="sub-title"><span>Sale Photo</span></p>
+                </div>
+            </li>
+            <li class="poslugu-list-item" >
+                <div class="text-ad">
+                <img class="posl-img" src="img/posl3.jpg" alt="">
+                <p class="sub-title"><span>Photo-lessons , mastering photo</span></p>
+                </div>
+            </li>
+        </ul>
+        <table>
+
+            <tr>
+                <th>Offer</th>
+                <th>Price</th>
+                <th>Location</th>
+                <th>Photograph</th>
+            </tr>
+            <tr>
+                <td>Photo in Studio</td>
+                <td>100</td>
+                <td>Lviv</td>
+                <td>Photograph1</td>
+            </tr>
+            <tr>
+                <td>Sale photo</td>
+                <td>200</td>
+                <td>Lviv</td>
+                <td>Photograph2</td>
+            </tr>
+            <tr>
+                <td>Photo-lessons</td>
+                <td>300</td>
+                <td>Lviv</td>
+                <td>Photograph3</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="photograph" id="photograph">
+        <h1 class="title">
+            Photographers
+        </h1>
+        <ul class="photograps-list">
+            <li class="photograph-list-item">
+                        <p class="ph-title"  onclick="clickText('ex1')" >Photograph 1</p>
+                        <div id="ex1" class="exact-photograph">
+                            <p class="ex-ph-title">
+                            <img  src="img/photograph1.jpg" alt="">
+
+                                Photograph 1
+                                Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation.
+
+                                Admiration stimulated cultivated reasonable be projection possession of. Real no near room ye bred sake if some. Is arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of. Astonished set expression solicitude way admiration.
+
+                                Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+
+                            </p>
+                        </div>
+
+
+            </li>
+            <li class="photograph-list-item">
+                <p class="ph-title" onclick="clickText('ex2')">Photograph 2</p>
+                <div id="ex2" class="exact-photograph">
+                    <p class="ex-ph-title">
+                        <img  src="img/photograph2.jpg" alt="">
+
+                        Photograph 1
+                        Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation.
+
+                        Admiration stimulated cultivated reasonable be projection possession of. Real no near room ye bred sake if some. Is arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of. Astonished set expression solicitude way admiration.
+
+                        Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                    </p>
+                </div>
+            </li>
+            <li class="photograph-list-item">
+                <p class="ph-title" onclick="clickText('ex3')">Photograph 3</p>
+                <div id="ex3" class="exact-photograph">
+                    <p class="ex-ph-title">
+                        <img  src="img/photograph3.jpg" alt="">
+
+                        Photograph 1
+                        Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation.
+
+                        Admiration stimulated cultivated reasonable be projection possession of. Real no near room ye bred sake if some. Is arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of. Astonished set expression solicitude way admiration.
+
+                        Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="models" id="models">
+        <h1 class="title">
+            Models
+        </h1>
+        <ul class="models-list">
+            <li class="models-list-item">
+
+                <img src="img/model1.png"alt="">
+                <div class="about-model">
+                    <p class="sub-title">Model 1</p>
+                </div>
+            </li>
+            <li class="models-list-item">
+                <img src="img/model2.png" alt="">
+                <div class="about-model">
+                    <p class="sub-title">Model 2</p>
+                </div>
+                </li>
+            <li class="models-list-item">
+                <img src="img/model3.jpg" alt="">
+                <div class="about-model">
+                    <p class="sub-title">Model 3</p>
+                </div>
+                </li>
+        </ul>
+    </div>
+
+    <div class="photo" id="photo">
+        <h1 class="title">
+            Photos
+        </h1>
+        <ul class="photo-list">
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo1.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 1</p>
+            </li>
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo2.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 2</p>
+            </li>
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo3.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 3</p>
+
+            </li>
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo4.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 4</p>
+            </li>
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo5.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 5</p>
+            </li>
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo6.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 6</p>
+            </li>
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo7.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 7</p>
+            </li>
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo8.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 8</p>
+            </li>
+            <li class="photo-list-item">
+                <div class="click">
+                    <img class="img_photo" src="img/photo9.jpg" alt="">
+                    <div class="img_toggle_tab"><p class="img-sub-title"><i class="fas fa-camera"></i></p></div>
+                </div>
+                <p class="sub-title">Photo 9</p>
+            </li>
+        </ul>
+        <div class="slider" id="slider">
+            <div class="item">
+                <img src="img/photo1.jpg" alt="">
+
+            </div>
+            <div class="item">
+                <img src="img/photo2.jpg" alt="">
+
+            </div>
+            <div class="item">
+                <img src="img/photo3.jpg"  alt="">
+
+            </div>
+            <div class="item">
+                <img src="img/photo4.jpg" alt="">
+
+            </div>
+            <div class="item">
+                <img src="img/photo5.jpg" alt="">
+
+            </div>
+            <div class="item">
+                <img src="img/photo6.jpg"  alt="">
+
+            </div>
+            <div class="item">
+                <img src="img/photo7.jpg"  alt="">
+
+            </div>
+            <div class="item">
+                <img src="img/photo8.jpg"  alt="">
+
+            </div>
+            <div class="item">
+                <img src="img/photo9.jpg"  alt="">
+
+            </div>
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+
+    </div>
+    </div>
+<footer>
+    <div class="footer">
+
+        <div class="footer-text">
+            <p>Contact us with : </p>
+        </div>
+        <ul class="footer-list">
+            <li class="footer-list-item"><div class="f-el"><i class="fab fa-instagram"></i></div></li>
+            <li class="footer-list-item"><div class="f-el"><i class="fab fa-facebook"></i></div></li>
+            <li class="footer-list-item"><div class="f-el"><i class="fab fa-linkedin"></i></div></li>
+            <li class="footer-list-item"><div class="f-el"><i class="fab fa-github"></i></div></li>
+            <li class="footer-list-item"><div class="f-el"><i class="fab fa-google"></i></div></li>
+        </ul>
+    </div>
+</footer>
+<a id="mail"  onclick="open_form()">
+    <i class="fas fa-question"></i>
+</a>
+<script src="js/myjs.js"></script>
+</body>
+</html>
