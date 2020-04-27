@@ -65,3 +65,76 @@ function open_form(){
         el.style.display='block';
     }
 }
+
+function checkName(s){
+    var letters =/^[A-Za-z]+$/;
+    if (s ==""){
+        alert("Enter your name");
+        return false;
+    }
+    else{
+        if(s.match(letters)){
+            return true;
+        }
+        else{
+            alert('Name must have only letters');
+            s.focus();
+            return false;
+        }
+    }  
+}
+
+function checkEmail(s){
+    var letters = /^[0-9a-zA-Z]+$/;
+    if (s==""){
+         alert("Enter your email");
+         return false;
+    }else{
+            if(s.match(letters)){
+                return true;
+            }
+            else{
+                alert('User email address must have only letters or numbers');
+                s.focus();
+                return false;
+            }
+        }
+}
+function checkPhone(s){
+    var numbers = /^[0-9]+$/;
+    if (s==""){
+        alert("Enter your phone number");
+        return false;
+    }
+    else{
+        if(s.match(numbers)){
+            return true;
+        }
+        else{
+            alert('User phone number must have only numbers');
+            s.focus();
+            return false;
+        }
+    }
+}
+
+function check_form(){
+    
+    
+    if(!checkName(document.forms[0].name.value)){
+        return false;
+    }
+
+    if(!checkEmail(document.forms[0].email.value)){
+        return false;
+    }
+    if(!checkPhone(document.forms[0].tel.value)){
+        return false;
+    }
+    if (document.forms[0].message.value==""){
+        alert("Enter your message");
+        return false;
+    }
+    return true;
+}
+

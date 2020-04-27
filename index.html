@@ -34,7 +34,7 @@
 </header>
 <div class="block"></div>
 <div class="form-block" id="form">
-    <form class="form" method="post" >
+    <form class="form" method="post" onsubmit="check_form();" id="ex_form">
         <p><label for="name">Name<span class="req">*</span></label>
             <input type="text" id="name" name="name" placeholder="Your name"></p>
        <p><label for="email">E-mail<span class="req">*</span></label>
@@ -312,7 +312,7 @@
         </ul>
     </div>
 </footer>
-<a id="mail"  onclick="open_form()">
+<a id="mail"  onclick="open_form();">
     <i class="fas fa-question"></i>
 </a>
 <script src="js/myjs.js"></script>
