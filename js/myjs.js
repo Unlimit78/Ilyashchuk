@@ -138,3 +138,29 @@ function check_form(){
     return true;
 }
 
+let toTop = document.getElementById('show'); 
+let formBut = document.getElementById('mail');
+toTop.hidden = true;
+
+toTop.addEventListener('mouseover',function(){
+	toTop.style.background = 'blue';
+})
+toTop.addEventListener('mouseout',function(){
+	toTop.style.background = '#202126';
+})
+formBut.addEventListener('mouseover',function(){
+	formBut.style.background = 'blue';
+})
+formBut.addEventListener('mouseout',function(){
+	formBut.style.background = '#202126';
+})
+
+window.addEventListener('scroll', function() {
+     toTop.hidden = (pageYOffset < document.documentElement.clientHeight);
+});
+toTop.addEventListener('click',function(){
+	window.scrollTo(pageXOffset,0);
+})
+
+
+
