@@ -161,6 +161,56 @@ window.addEventListener('scroll', function() {
 toTop.addEventListener('click',function(){
 	window.scrollTo(pageXOffset,0);
 })
+let them_change = document.getElementById('them_change');
+them_change.addEventListener('click',function(){
+	if(them_change.className === 'change-but-black'){
+        them_change.style.display = 'none';
+		document.getElementById('header').style.background = 'white';
+		document.getElementById('nav-menu').style.background = 'rgba(255,255,255,0.91)';
+		document.getElementsByClassName('menu__btn')[0].className+='-second';
+		document.body.style.backgroundImage = "url('./img/back2.jpg')";
+        document.getElementsByClassName('footer-text')[0].style.color = 'black';
+        document.getElementById('footer').style.background = 'white';
+        document.getElementById('show').style.background = 'white';
+        document.getElementById('mail').style.background = 'white';
+        document.getElementsByClassName('fas fa-angle-double-up')[0].style.color = 'black';
+        document.getElementsByClassName('fas fa-question')[0].style.color = 'black';
+        let foot_list = document.getElementsByClassName('footer-list-item');
+		let head_list = document.getElementsByClassName('nav-item');
+        for(var i=0; i < head_list.length; i++) { 
+            head_list[i].style.color = 'black';
+        }
+        for(var i=0; i < foot_list.length; i++) { 
+            foot_list[i].style.color = 'black';
+        }
+        them_change.className = 'change-but-white';
+        them_change.style.display = 'block';
+	}
+	else if (them_change.className ==='change-but-white'){
+        document.getElementById('header').style.background = 'black';
+        document.getElementById('nav-menu').style.background = 'rgba(22,22,22,0.91)';
+        document.getElementsByClassName('menu__btn-second')[0].className='menu__btn';
+        document.body.style.backgroundImage = "url('./img/back5.jpg')";
+        document.getElementsByClassName('footer-text')[0].style.color = 'white';
+        document.getElementById('footer').style.background = 'black';
+        document.getElementById('show').style.background = '#202126';
+        document.getElementById('mail').style.background = '#202126';
+        document.getElementsByClassName('fas fa-angle-double-up')[0].style.color = 'white';
+        document.getElementsByClassName('fas fa-question')[0].style.color = 'white';
+        let foot_list = document.getElementsByClassName('footer-list-item');
+        let head_list = document.getElementsByClassName('nav-item');
+        for(var i=0; i < head_list.length; i++) { 
+            head_list[i].style.color = 'white';
+        } 
+        for(var i=0; i < foot_list.length; i++) { 
+            foot_list[i].style.color = 'white';
+        }
+        them_change.className = 'change-but-black';
+        them_change.style.display = 'block';
+
+
+	}
+})
 
 
 

@@ -11,12 +11,13 @@
 <body>
 
 <header>
-    <div class="header">
+    <div class="header" id='header'>
+       <a href='#' class="change-but-black" id="them_change">Light Theme</a>
         <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
+        <label class="menu__btn" for="menu__toggle" >
+            <span id="menu_btn"></span>
         </label>
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="nav-menu">
             <li><a class="nav-item" href="#">Home</a></li>
             <li><a class="nav-item" href="#">Offers</a></li>
             <li><a class="nav-item" href="#">Photographers</a></li>
@@ -30,6 +31,7 @@
 
             </li>
         </ul>
+        <a href='#' class="change-but-white" id="them_change">Dark Theme</a>
     </div>
 </header>
 <div class="block"></div>
@@ -297,7 +299,7 @@
 
     </div>
     </div>
-<footer>
+<footer id="footer">
     <div class="footer">
 
         <div class="footer-text">
